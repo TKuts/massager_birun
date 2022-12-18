@@ -1,0 +1,29 @@
+@import "../mixins/mixins";
+@import "../colors/color";
+@import "../fonts/fonts";
+
+html {
+  scroll-behavior: smooth;
+}
+
+.body-bg {
+  background-image: url(/img/bacground.PNG);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.g-container {
+  min-width: 1200px;
+  padding: 0 15px 0 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.container {
+  width: 1200px;
+
+  @include centr-column;
+}

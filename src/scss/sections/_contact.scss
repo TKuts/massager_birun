@@ -1,0 +1,72 @@
+@import "../mixins/mixins";
+@import "../colors/color";
+@import "../fonts/fonts";
+
+.footer {
+  @include centr-column;
+  justify-content: center;
+  padding: 20px 0;
+  width: 100%;
+  position: absolute;
+  background: $main-colorOpaciti;
+}
+.footer__social {
+  display: flex;
+
+  &-item {
+    display: flex;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 30px;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    cursor: pointer;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      background: linear-gradient(87.32deg, #00ade234 4.47%, #00ade23b 95.53%);
+      box-shadow: 0px 2px 13px rgba(6, 230, 230, 0.322);
+    }
+  }
+  &-link {
+    display: flex;
+    align-items: center;
+    height: 50px;
+  }
+  &-icons {
+    width: 25px;
+    height: 25px;
+  }
+}
+.footer__slogan-text {
+  font-family: $fontManrope;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+//  .footer__social-item:nth-child(1):hover {
+// 	background: #2da1da;
+//  }
+//  .footer__social-item:nth-child(2):hover {
+// 	background: linear-gradient(
+// 	  45deg,
+// 	  #f09733 0%,
+// 	  #e6683c 25%,
+// 	  #dc2743 50%,
+// 	  #cc2366 75%,
+// 	  #bc1888 100%
+// 	);
+//  }
+//  .footer__social-item:nth-child(3):hover {
+// 	background: rgb(0, 194, 0);
+//  }
+//  .footer__social-item:nth-child(4):hover {
+// 	background: #0088ccef;
+//  }
+//  .footer__social-item:nth-child(5):hover {
+// 	background: linear-gradient(120deg, #8a83b3 25%, #8f5db7 60%, #59267c 100%);
+//  }

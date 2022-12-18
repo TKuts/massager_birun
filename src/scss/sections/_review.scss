@@ -1,0 +1,87 @@
+@import "../mixins/mixins";
+@import "../colors/color";
+@import "../fonts/fonts";
+
+.section__swiper {
+  @include centr-column;
+  .swiper {
+    width: 100%;
+    height: 100%;
+    margin: 25px 0;
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    .review {
+      @include centr-column;
+
+      &__text {
+        font-family: $fontManrope;
+        background: #ffffff;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        width: 524px;
+        padding: 30px;
+      }
+      &__body {
+        background: $main-colorOpaciti;
+        display: flex;
+        align-items: center;
+        padding: 30px;
+        width: 524px;
+        &-photo {
+          display: flex;
+          align-items: center;
+
+          background-color: black;
+          border-radius: 50px;
+          color: aqua;
+          width: 15px;
+          height: 44px;
+          padding-right: 30px;
+        }
+      }
+    }
+  }
+}
+.review__title {
+  text-align: left;
+  &-grade {
+    margin-bottom: 6px;
+  }
+}
+
+.review__body-title {
+  font-family: $fontPlayfair;
+  font-weight: 400;
+  color: black;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 6px;
+  margin-right: 210px;
+}
+.review__body-quotes {
+  margin-right: 14px;
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+.test {
+  color: black;
+}
+.review__body-photo {
+}

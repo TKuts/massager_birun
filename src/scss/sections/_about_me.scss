@@ -1,0 +1,74 @@
+@import "../mixins/mixins";
+@import "../colors/color";
+@import "../fonts/fonts";
+
+.about-me {
+  @include centr-column;
+  justify-content: center;
+  margin: 20px 0;
+  &__title {
+    font-family: $fontPlayfair;
+    font-weight: 400;
+    color: black;
+    font-size: 48px;
+    line-height: 54px;
+    margin-bottom: 34px;
+    z-index: 2;
+  }
+  &__paragraph {
+    display: block;
+    text-align: center;
+    font-family: $fontManrope;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    width: 370px;
+    padding: 62px;
+    letter-spacing: 0.01em;
+    background: #2c2c2c;
+    color: #ffffff;
+    border-radius: 14px;
+    z-index: 2;
+    box-shadow: 0px 0px 0px 6px $main-colorOpaciti;
+    border-radius: 14px;
+  }
+}
+
+.box {
+  position: relative;
+}
+
+.about-me__ellips-first {
+  position: absolute;
+  width: 486px;
+  height: 486px;
+  left: -110px;
+  top: -300px;
+}
+.about-me__ellips-second {
+  position: absolute;
+  width: 356px;
+  height: 356px;
+  right: 60px;
+  bottom: 140px;
+}
+
+.about-me__photo-first {
+  position: absolute;
+  width: 260px;
+  height: 325px;
+  right: 259px;
+  bottom: -44px;
+
+  box-shadow: 0px 0px 0px 6px $main-colorOpaciti;
+  border-radius: 14px;
+}
+.about-me__photo-second {
+  position: absolute;
+  width: 260px;
+  height: 325px;
+  left: 259px;
+  bottom: 120px;
+  box-shadow: 0px 0px 0px 6px $main-colorOpaciti;
+  border-radius: 14px;
+}

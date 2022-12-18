@@ -1,0 +1,155 @@
+@import "../mixins/mixins";
+@import "../colors/color";
+@import "../fonts/fonts";
+
+
+.price-bg {
+	@include centr-column;
+ }
+
+ .price__tittle {
+	font-family: "Playfair Display", sans-serif;
+	font-weight: 400;
+	color: black;
+	font-size: 48px;
+	line-height: 54px;
+	margin-bottom: 36px;
+	z-index: 2;
+ }
+ .price__tittle-center {
+	width: 1200px;
+	@include centr-column;
+	margin: 25px 0;
+	padding: 0 15px;
+	
+ }
+ .price__main-firs{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
+ }
+ .price__main-second{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
+
+ }
+ .main__img{
+	&-first{
+		width: 570px;
+		height: 610px;
+	
+		box-shadow: 0 0 0 6px rgb(199 241 247 / 60%);
+    	border-radius: 14px;
+	}
+	&-second{
+		width: 560px;
+		height: 630px;
+		
+		box-shadow: 0 0 0 6px rgb(199 241 247 / 60%);
+   	 border-radius: 14px;
+	}
+ }
+.block__text-first{
+	width: 550px;
+	margin-left: 15px;
+}
+.block__text-second{
+	width: 550px;
+	margin-right: 15px;
+}
+	
+ .price__main-tittle {
+	font-family: "Manrope", sans-serif;
+	text-align: center;
+	font-weight: 400;
+	color:black;
+	font-size: 38px;
+	line-height: 44px;
+	margin-bottom: 20px;
+	text-decoration: underline;
+ }
+ .price__block{
+	margin-top: 12px;
+	&:first-child{
+		margin-top:0px;
+	}
+	&-title{
+		display: flex;
+		justify-content: space-between;
+		border-bottom: 4px solid #000000;
+	}
+	
+	&-text {
+		font-family: "Manrope", sans-serif;
+		font-weight: 400;
+		color: black;
+		font-size: 20px;
+		line-height: 24px;
+		letter-spacing: 0.01em;
+
+	 }
+	 &-explanation{
+		font-family: "Manrope", sans-serif;
+		font-weight: 400;
+		line-height: 27px;
+		color: #555555;
+		padding: 4px 0 10px 0;
+		border-bottom: 2px solid #555555;
+	 }
+ }
+
+ 
+ .price__subscription{
+	width: 800px;
+	
+ }
+
+ .price__subscription-old {
+	font-family: "Manrope", sans-serif;
+	font-weight: 400;
+	color:black;
+	font-size: 20px;
+	line-height: 24px;
+	letter-spacing: 0.01em;
+	text-align: end;
+	padding: 6px 0 14px 0;
+	margin-bottom: 10px;
+	position: relative;
+	border-bottom: 2px solid #555;
+ }
+ .price__subscription-old::before {
+	border-bottom: 4px solid red;
+	position: absolute;
+	content: "";
+	width: 48px;
+	height: 25%;
+	transform: rotate(-15deg);
+ }
+ .price__main-new {
+	font-family: "Manrope", sans-serif;
+	font-weight: 400;
+	color:black;
+	font-size: 20px;
+	line-height: 24px;
+	letter-spacing: 0.01em;
+ }
+ .price__main-new::before {
+	content: " = ";
+ }
+ .price__subscription-note{
+	
+ }
+ .note-text {
+	font-family: "Manrope", sans-serif;
+	width: 130px;
+	margin: 0 auto;
+	font-weight: 400;
+	color: #e4e4e4;
+	font-size: 20px;
+	line-height: 24px;
+	letter-spacing: 0.01em;
+ }
+ 
